@@ -1,8 +1,6 @@
-FROM centos
-MAINTAINER arsadkhan
-RUN yum install -y httpd \
-  zip \
- unzip
+FROM centos:8
+MAINTAINER khan.arshadli91@gmail.com
+RUN dnf install httpd -y
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page280/sungla.zip /var/www/html/
 WORKDIR /var/www/html
 RUN unzip sungla.zip
