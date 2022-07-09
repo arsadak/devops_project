@@ -1,5 +1,6 @@
 FROM ubuntu
 MAINTAINER khan.arshadli91@gmail.com
+RUN apt update -y
 RUN apt install apache2 -y
 #ADD https://www.free-css.com/assets/files/free-css-templates/download/page280/sungla.zip /var/www/html/
 #WORKDIR /var/www/html
